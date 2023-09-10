@@ -15,12 +15,23 @@ Thanks for taking a look at my project. The purpose of this project is to monito
 1. Use VSCode (extensions: Pylance, Python)
 2. Create a .env file in root of project
 
-     `SECRET_KEY=<BAD_SECRET_KEY>`
+     - `SECRET_KEY=<BAD_SECRET_KEY>`
 
-     `CONNECTION_STRING=<connection_string>`
+     - `CONNECTION_STRING=<connection_string>`
 
 3. Map launch.json file to 'run and debug' configuration
-4. Create a db with the following tables
+4. In VS Code, open the Command Palette (View > Command Palette or (Ctrl+Shift+P)). Then select the Python: Create Environment command to create a virtual environment in your workspace. Select venv and then the Python environment you want to use to create it.
+5. After your virtual environment creation has been completed, run Terminal: Create New Terminal (Ctrl+Shift+`)) from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script.
+   > Note: On Windows, if your default terminal type is PowerShell, you may see an error that it cannot run activate.ps1 because running scripts is disabled on the system. The error provides a link for information on how to allow scripts. Otherwise, use Terminal: Select Default Profile to set "Command Prompt" or "Git Bash" as your default instead.
+6. Run the following commands in the terminal:
+
+     - `pip install flask`
+
+     - `pip install flask-dotenv`
+
+     - `pip install sqlalchemy`
+   
+8. Create a db with the following tables
      #### CertInfo
      | Column Name | Data Type | Allow Nulls |
      | ----------- | --------- | ----------- |
