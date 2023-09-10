@@ -48,6 +48,7 @@ Thanks for taking a look at my project. The purpose of this project is to monito
      | isAdmin | int | no |
 
 ### Things I would improve on
+- Dockerize the project
 - Overall code base could use a cleanup/optimization
 - Use object-relational mapping instead of raw sql
 - Roll-over logging
