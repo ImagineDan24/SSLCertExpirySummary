@@ -27,9 +27,13 @@ Thanks for taking a look at my project. The purpose of this project is to monito
 
      - `pip install flask`
 
-     - `pip install flask-dotenv`
+     - `pip install python-dotenv`
 
      - `pip install sqlalchemy`
+
+     - `pip install psycopg2`
+
+     - `pip install pyOpenSSL`
    
 8. Create a db with the following tables
      #### CertInfo
